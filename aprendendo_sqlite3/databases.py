@@ -17,6 +17,7 @@ PASTA_APRENDENDO_SQLITE = "aprendendo_sqlite3"
 NOME_BD = os.path.join(PASTA_PRINCIPAL, PASTA_APRENDENDO_SQLITE, "BANCO.db")
 banco = sql.connect(NOME_BD)
 
+
 # CRIAÇÃO DAS TABELAS DO BANCO DE DADOS
 # antes, vc precisa criar o CURSOR, ele é o objeto que te permite executar comandos dentro do
 # banco de dados e manipular ele.
