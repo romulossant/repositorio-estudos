@@ -14,7 +14,7 @@ PASTA_APRENDENDO_SQLITE = "aprendendo_sqlite3"
 # com o nome do arquivo dentro de parênteses. NÃO ESQUECER O .db no final. os.path.join()
 # serve pra fazer a criação do diretório que você quer, concatenando as constantes e o nome
 # do banco de dados da sua escolha. o nome também pode ser definido como uma variável qualquer
-NOME_BD = os.path.join(PASTA_PRINCIPAL, PASTA_APRENDENDO_SQLITE, "NOME_BANCO_DE_DADOS.db")
+NOME_BD = os.path.join(PASTA_PRINCIPAL, PASTA_APRENDENDO_SQLITE, "BANCO.db")
 banco = sql.connect(NOME_BD)
 
 # CRIAÇÃO DAS TABELAS DO BANCO DE DADOS
@@ -25,5 +25,7 @@ banco = sql.connect(NOME_BD)
 # se você colocar o programa pra criar uma tabela que já exist ele vai dar erro, então é bom
 # colocar essa verificação pra não dar quebrar o código
 cursor = banco.cursor()
-cursor.execute("CREATE TABLE IF NOT EXISTS nome_da_tabela (coluna1 tipo_coluna1, \
-               coluna2 tipo_coluna2)")
+cursor.execute("CREATE TABLE IF NOT EXISTS nome_da_tabela (nome text, \
+               idade integer, genero text)")
+
+
