@@ -1,4 +1,5 @@
-import functions as func
+from bd_pessoas import Pessoa
 
-func.inserir_dados_no_bd()
+novo_usuario = Pessoa()
+novo_usuario.inserir_pessoa()
 
