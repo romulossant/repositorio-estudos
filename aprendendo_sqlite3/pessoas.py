@@ -1,9 +1,8 @@
-import os
 import sqlite3 as sql
 import databases as db
 
 class Pessoa:
-    def __init__(self, nome = "", idade = "", genero = ""):
+    def __init__(self, nome = None, idade = None, genero = None):
         self.nome = nome
         self.idade = idade
         self.genero = genero
