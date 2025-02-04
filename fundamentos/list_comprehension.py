@@ -25,10 +25,16 @@ def inverter_strings():
     strings_invertidas = [fruta[::-1] for fruta in frutas]
     print(strings_invertidas)
 
-if __name__ == "__main__":
+#   lista de tuplas, que contém um número e seu quadrado dentro da tupla, ex: [(1,1), (3,9)]
+def lista_de_tuplas():
+    numeros = [1,2,3,4,5]
+    lista_tuplas = [(num, num ** 2) for num in numeros]
+    print(lista_tuplas)
 
+if __name__ == "__main__":
     num_pares_0a20()
     quadrados_0a10()
     filtro_maior_5letras()
     divisiveis_3e5()
     inverter_strings()
+    lista_de_tuplas()
